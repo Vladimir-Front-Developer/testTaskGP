@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { MessageI } from 'src/app/interfaces/message.interface';
 
 @Component({
   selector: 'app-message-list',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./message-list.component.scss']
 })
 export class MessageListComponent implements OnInit {
+  @Input() messages: Array<MessageI>;
 
   constructor() { }
 

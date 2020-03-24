@@ -1,45 +1,23 @@
 import { Injectable } from '@angular/core';
-
-export interface ChatInfoI {
-  id: string,
-  name: string,
-  user: {
-    connection: boolean,
-    statusText: string
-  }
-}
-
-export interface MessageI {
-  user: {
-    id: string,
-    name: string,
-    img: string
-  },
-  msg: string,
-  uptime: number
-}
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class JoinChatService {
-  private chatId: string
-  public information: ChatInfoI
-  public messages: Array<MessageI>
-  constructor(chatId) {
-    // this.information = this.getChatInformations(chatId)
-  }
+  private url = 'https://my-json-server.typicode.com/Vladimir-Front-Developer/testTaskGP/chats';
+  private chatId: string;
 
-  getChatInformations(id: string): ChatInfoI {
-    
-  }
+  constructor(private http: HttpClient) { }
 
-  getMessages() {
-
+  getChatHistory(id: string): Observable<any> {
+    this.chatId = id;
+    return this.http.get(`${this.url}/${id}`);
   }
 
   sendMessage() {
-
+    
   }
 
 }

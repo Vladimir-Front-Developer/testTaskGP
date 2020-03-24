@@ -2,11 +2,11 @@
     <div class="user">
         <button mat-mini-fab class="user-image">
         </button>
-        <div class="user-name">Alexey 16:04</div>
+        <div class="user-name">{{msg?.user.name}} {{msg.uptime * 1000 | date}}</div>
     </div>
     <div class="message">
         <div class="message-container">
-            эй, а где мой шикарный хаер? где вечно злобное и недовольное выражение лица??? это таким ты меня видишь? ну держись у меня
+            {{msg?.msg}}
         </div>
     </div>
 </div>

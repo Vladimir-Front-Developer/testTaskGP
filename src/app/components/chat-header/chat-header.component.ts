@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
+import { ChatInfoI } from 'src/app/interfaces/chat-informations.interface';
 
 @Component({
   selector: 'app-chat-header',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat-header.component.scss']
 })
 export class ChatHeaderComponent implements OnInit {
+  @Input() chatInfo: ChatInfoI
 
   constructor() { }
+  
+  //ngOnChanges(){} требуеться, на изминения статуса и названия чата
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

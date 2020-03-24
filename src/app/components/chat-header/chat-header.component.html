@@ -1,9 +1,9 @@
 <div class="chat-header">
     <div class="chat-header_info">
-        <button class="chat-header__name">chatName</button>
+        <button class="chat-header__name">{{chatInfo?.name}}</button>
         <div class="chat-header__status">
-            <div class="status-activity"></div>
-            <p class="status-text">statusText</p>
+            <div class="status-activity" *ngIf="chatInfo?.user.connection"></div>
+            <p class="status-text">{{chatInfo?.user.statusText}}</p>
         </div>
     </div>
     <div class="chat-header_actions">
