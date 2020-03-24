@@ -1,0 +1,10 @@
+.conatiner-list{
+    position: relative;
+    overflow: hidden scroll;
+    box-sizing: border-box;
+    display: block;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    height: calc(100vh - 191px);
+}

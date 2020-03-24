@@ -1,0 +1,54 @@
+.chat-header{
+    padding-left: 20px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    border-bottom: 1px solid #2a2b31;
+    .chat-header_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .chat-header__name{
+            cursor: pointer;
+            font-size: 24px;
+            font-family: "SF Bold", "Segoe System UI Bold", "Segoe UI Bold", sans-serif;
+        }
+        .chat-header__name:hover{ opacity: 0.8; }
+        .chat-header__status{
+            font-size: 12px;
+            font-family: "SF Bold", "Segoe System UI Bold", "Segoe UI Bold", sans-serif;
+            font-weight: 400;
+            line-height: 25px;
+            height: 25px;        
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: rgb(138, 141, 145);
+            .status-activity{
+                width: 8px;
+                height: 8px;
+                border-radius: 4px;
+                margin-right: 4px;
+                background-color: rgb(77, 217, 101);
+            }
+        }
+        .chat-header__status:hover{ opacity: 0.8; }
+    }
+    .chat-header_actions{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.custom-fab-btn{
+    background-color: #2b333b;
+}
+.custom-fab-btn:hover{
+    background-color: #000000;
+}
+.ml10{
+    margin-left: 10px;
+}

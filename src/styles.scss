@@ -1,0 +1,32 @@
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+}
+button,
+button:active, 
+button:focus{
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 0;
+}
+input,
+input:active, 
+input:focus{
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
