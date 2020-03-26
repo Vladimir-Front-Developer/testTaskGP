@@ -7,4 +7,10 @@
     justify-content: flex-end;
     padding: 20px;
     height: calc(100vh - 191px);
+    .list{
+        position: absolute;
+        width: 100%;
+        max-height: calc(100vh - 191px);
+        bottom: 0;
+    }
 }

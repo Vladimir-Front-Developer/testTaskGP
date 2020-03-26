@@ -3,9 +3,13 @@
         <button mat-mini-fab class="custom-fab-btn">
             <mat-icon aria-label="phone">sentiment_satisfied_alt</mat-icon>
         </button>
-        <input type="text" placeholder="Введите сообщение" class="custom-input">
+        <input
+        type="text"
+        placeholder="Введите сообщение"
+        class="custom-input"
+        [formControl]="entryFieldMessages">
     </div>
-    <button mat-mini-fab class="custom-fab-send-btn">
+    <button mat-mini-fab class="custom-fab-send-btn" (click)="sendMessage()">
         <mat-icon aria-label="phone">send</mat-icon>
     </button>
 </div>

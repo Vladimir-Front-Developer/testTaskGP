@@ -8,6 +8,9 @@
     display: flex;
     overflow: hidden;
 }
+.flexEnd{
+    justify-content: flex-end;
+}
 .user-image{
     position: relative;
     background-size: contain;

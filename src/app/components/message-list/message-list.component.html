@@ -1,3 +1,5 @@
-<div class="conatiner-list">
-    <app-message *ngFor="let msg of messages" [msg]="msg"></app-message>
+<div id="msgContainer" [scrollTop]="scrollHeight" class="conatiner-list">
+    <div class="list">
+        <app-message *ngFor="let msg of messages" [msg]="msg"></app-message>
+    </div>
 </div>
