@@ -13,8 +13,8 @@ export class ChatService {
   private chatsUrl = 'ws://localhost:3000';
 
   public wsConnection$: Subject<any>
-  public chatInfo$ = new Subject()
-  public messages$ = new Subject()
+  public chatInfo$: Subject<ChatInfoI> = new Subject()
+  public messages$: Subject<Array<MessageI>> = new Subject()
 
   constructor() {}
 
