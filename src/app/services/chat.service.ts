@@ -10,7 +10,7 @@ import { UserService } from './user.service';
   providedIn: 'root'
 })
 export class ChatService {
-  private chatsUrl = 'ws://localhost:3000';
+  private chatsUrl = 'ws://web-socket-server.herokuapp.com/';
 
   public wsConnection$: Subject<any>
   public chatInfo$: Subject<ChatInfoI> = new Subject()
